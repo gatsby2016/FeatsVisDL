@@ -2,8 +2,6 @@
 
 This repository contains some features visualization methods for DL models in **PyTorch**.
 
-Another repo for more techniques: [pytorch-cnn-visualizations](https://github.com/utkuozbulak/pytorch-cnn-visualizations)
-
 > `codes/` is the folder of source scripts
 
 > `data/` is the folder of some samples
@@ -12,16 +10,16 @@ Another repo for more techniques: [pytorch-cnn-visualizations](https://github.co
 
 > `results/` is the folder for **attention / saliency / features maps**
 
+Another repo for more techniques: [pytorch-cnn-visualizations](https://github.com/utkuozbulak/pytorch-cnn-visualizations)
+
 
 ### CAM (Class Activation Map)
 
-[Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150)
+**Paper reference:** [Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150)
 
 To visualize the model where it focus on by activation maps.
 
 The limitation is that the model must has a **Global Pooling** followed by one **fully connected layer** to classes.
-
-Some examples are shown below:
 
 <table border=0 width="50px" >
 	<tbody> 
@@ -43,20 +41,18 @@ Some examples are shown below:
 </table>
 
 
-### Layers feature maps visualization
+### Feature maps visualization on Layers
 
 To visualize the **features maps** after each layer, which can also be viewed as the method for **DL features extraction**.
 
-Some examples are shown below:
-
 <table border=0 width="50px" >
 	<tbody> 
-    <tr>		<td width="30%" align="center"> Original Images </td>
+    <tr>		<td width="30%" align="center"> Original Image </td>
 			<td width="30%" align="center"> Maps after 1st maxpool </td>
 			<td width="30%" align="center"> Maps after Layer1</td>
 		</tr>
 		<tr>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/ball.jpg"> </td>
+			<td width="15%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/ball.jpg"> </td>
 			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/maxpool.gif"> </td>
 			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer1.gif"> </td>
 		</tr>
@@ -65,17 +61,12 @@ Some examples are shown below:
 			<td width="30%" align="center"> Maps after Layer4 </td>
 		</tr>
 		<tr>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer2.gif"> </td>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer3.gif"> </td>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer4.gif"> </td>
+			<td width="60%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer2.gif"> </td>
+			<td width="120%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer3.gif"> </td>
+			<td width="240%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer4.gif"> </td>
 		</tr>
 	</tbody>
 </table>
-
-
-
-
-
 
 
 
