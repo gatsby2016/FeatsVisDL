@@ -1,37 +1,79 @@
-## Attention visualization for Deep Learning models in **PyTorch**
+## Maps visualization for Deep Learning models in **PyTorch**
 
-This repository contains some features visualization methods for DL models in **PyTorch**
+This repository contains some features visualization methods for DL models in **PyTorch**.
+
 Another repo for more techniques: [pytorch-cnn-visualizations](https://github.com/utkuozbulak/pytorch-cnn-visualizations)
 
-> codes/ is the folder of source scripts
+> `codes/` is the folder of source scripts
 
-> data/ is the folder of some samples
+> `data/` is the folder of some samples
 
-> model/ is the pretrained ResNet34 model on ImageNet
+> `model/` is the pretrained ResNet34 model on ImageNet
 
-> results/ is the folder for attention / saliency / features maps
+> `results/` is the folder for **attention / saliency / features maps**
 
 
-#### (CAM) Class Activation Map
+### CAM (Class Activation Map)
 
+[Learning Deep Features for Discriminative Localization](https://arxiv.org/abs/1512.04150)
+
+To visualize the model where it focus on by activation maps.
+
+The limitation is that the model must has a **Global Pooling** followed by one **fully connected layer** to classes.
+
+Some examples are shown below:
 
 <table border=0 width="50px" >
 	<tbody> 
     <tr>		<td width="30%" align="center"> Original Images </td>
-			<td width="30%" align="center"> Attention Maps </td>
+			<td width="30%" align="center"> Activation Maps </td>
 			<td width="30%" align="center"> Overlapped Images </td>
 		</tr>
 		<tr>
 			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/plane.jpeg"> </td>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/plane_404_CAM.png"> </td>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/plane_404_overlap.png"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/CAM/plane_404_CAM.png"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/CAM/plane_404_overlap.png"> </td>
+		</tr>
+		<tr>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/rugbyball.jpg"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/CAM/rugbyball_768_CAM.png"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/CAM/rugbyball_768_overlap.png"> </td>
+		</tr>
+	</tbody>
+</table>
+
+
+### Layers feature maps visualization
+
+To visualize the **features maps** after each layer, which can also be viewed as the method for **DL features extraction**.
+
+Some examples are shown below:
+
+<table border=0 width="50px" >
+	<tbody> 
+    <tr>		<td width="30%" align="center"> Original Images </td>
+			<td width="30%" align="center"> Maps after 1st maxpool </td>
+			<td width="30%" align="center"> Maps after Layer1</td>
+		</tr>
+		<tr>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/ball.jpg"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/maxpool.gif"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer1.gif"> </td>
+		</tr>
+    <tr>		<td width="30%" align="center"> Maps after Layer2 </td>
+			<td width="30%" align="center"> Maps after Layer3 </td>
+			<td width="30%" align="center"> Maps after Layer4 </td>
+		</tr>
+		<tr>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer2.gif"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer3.gif"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer4.gif"> </td>
 		</tr>
 	</tbody>
 </table>
 
 
 
-#### Layers feature maps visualization
 
 
 
@@ -39,14 +81,7 @@ Another repo for more techniques: [pytorch-cnn-visualizations](https://github.co
 
 
 
-
-
-
-
-
-
-
-### Note for Me.
+### Note for myself.
 ```
 git init
 git add README.md
