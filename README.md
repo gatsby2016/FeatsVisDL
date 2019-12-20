@@ -52,7 +52,7 @@ To visualize the **features maps** after each layer, which can also be viewed as
 			<td width="30%" align="center"> Maps after Layer1</td>
 		</tr>
 		<tr>
-			<td width="15%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/ball.jpg"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/ball.jpg"> </td>
 			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/maxpool.gif"> </td>
 			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer1.gif"> </td>
 		</tr>
@@ -61,9 +61,9 @@ To visualize the **features maps** after each layer, which can also be viewed as
 			<td width="30%" align="center"> Maps after Layer4 </td>
 		</tr>
 		<tr>
-			<td width="60%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer2.gif"> </td>
-			<td width="120%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer3.gif"> </td>
-			<td width="240%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer4.gif"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer2.gif"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer3.gif"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/featsmapVis/ball/gif/layer4.gif"> </td>
 		</tr>
 	</tbody>
 </table>
