@@ -16,7 +16,7 @@ def GetArgs():
     parser.add_argument('-P', '--readImgUrl', type=str, default='../data/spider.png',
                         help='Url of the image for attention map visualization')
 
-    parser.add_argument('-S', '--savePth', type=str, default='../results/',
+    parser.add_argument('-S', '--savePth', type=str, default='../results/CAM/',
                         help='the path to save attention maps and overlapped images')
     arg = parser.parse_args()
     return arg
@@ -52,7 +52,7 @@ def GetWeights(network, prediction):
 def GetCAM(featsmap, weights):
     weights = torch.reshape(weights, (-1, 1, 1))
     cam = torch.sum(torch.mul(featsmap, weights), dim=0)
-
+    # cam = F.relu(cam)
     cam = cam - torch.min(cam)
     cam_img = cam / torch.max(cam)
 

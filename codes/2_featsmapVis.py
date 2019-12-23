@@ -13,7 +13,7 @@ def GetArgs():
     parser.add_argument('-M', '--modelPth', type=str, default='../model/resnet34-333f7ec4.pth',
                         help='the network model path')
 
-    parser.add_argument('-P', '--readImgUrl', type=str, default='../data/cat_dog.png',
+    parser.add_argument('-P', '--readImgUrl', type=str, default='../data/ball.jpg',
                         help='Url of the image for feats map visualization')
 
     parser.add_argument('-S', '--savePth', type=str, default='../results/featsmapVis/',
