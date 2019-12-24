@@ -41,6 +41,37 @@ The limitation is that the model must has a **Global Pooling** followed by one *
 </table>
 
 
+### Grad-CAM
+
+**Paper reference:** [Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization](https://arxiv.org/pdf/1610.02391.pdf)
+
+This Grad-CAM method is **a strict generalization of CAM**, which are not limited to GAP and fc.
+$$
+w_{k}^{c}=\sum_{i} \sum_{j} \frac{\partial Y^{c}}{\partial A_{i j}^{k}}
+$$
+
+Generated attention maps of Grad-CAM is the same as CAM when the model is **ResNet34 with GAP and fc**.
+
+<table border=0 width="50px" >
+	<tbody> 
+    <tr>		<td width="30%" align="center"> Original Images </td>
+			<td width="30%" align="center"> Activation Maps </td>
+			<td width="30%" align="center"> Overlapped Images </td>
+		</tr>
+		<tr>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/plane.jpeg"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/plane_404_CAM.png"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/plane_404_overlap.png"> </td>
+		</tr>
+		<tr>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/rugbyball.jpg"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/rugbyball_768_CAM.png"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/rugbyball_768_overlap.png"> </td>
+		</tr>
+	</tbody>
+</table>
+
+
 ### Feature maps visualization on Layers
 
 To visualize the **features maps** after each layer, which can also be viewed as the method for **DL features extraction**.
