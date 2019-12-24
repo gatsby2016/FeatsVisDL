@@ -47,9 +47,7 @@ The limitation is that the model must has a **Global Pooling** followed by one *
 
 This Grad-CAM method is **a strict generalization of CAM**, which are not limited to GAP and fc.
 
-$$
-w_{k}^{c}=\sum_{i} \sum_{j} \frac{\partial Y^{c}}{\partial A_{i j}^{k}}
-$$
+$$w_{k}^{c}=\sum_{i} \sum_{j} \frac{\partial Y^{c}}{\partial A_{i j}^{k}}$$
 
 Generated attention maps of Grad-CAM is the same as CAM's **when the model is ResNet34 with GAP and fc**.
 
