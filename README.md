@@ -105,8 +105,8 @@ To visualize the **features maps** after each layer, which can also be viewed as
 ### Note for myself.
 ```
 git init
+git remote add origin git@github.com:gatsby2016/FeatsVisDL.git
 git add README.md
 git commit -m "first commit"
-git remote add origin git@github.com:gatsby2016/FeatsVisDL.git
 git push -u origin master
 ```
