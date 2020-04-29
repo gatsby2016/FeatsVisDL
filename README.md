@@ -59,13 +59,13 @@ Generated attention maps of Grad-CAM is the same as CAM's **when the model is Re
 		</tr>
 		<tr>
 			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/plane.jpeg"> </td>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/plane_404_CAM.png"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/plane_404_GradCAM.png"> </td>
 			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/plane_404_overlap.png"> </td>
 		</tr>
 		<tr>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/rugbyball.jpg"> </td>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/rugbyball_768_CAM.png"> </td>
-			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/rugbyball_768_overlap.png"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/data/ball.jpg"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/ball_852_GradCAM.png"> </td>
+			<td width="30%" align="center"> <img src="https://github.com/gatsby2016/FeatsVisDL/blob/master/results/GradCAM/ball_852_overlap.png"> </td>
 		</tr>
 	</tbody>
 </table>
